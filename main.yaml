@@ -1,0 +1,27 @@
+name: Main Workflow
+push:
+    branches:
+      - main
+    paths:
+      - 'e-auction/**'
+  pull_request:
+    paths:
+      - 'e-auction/**'
+    types:
+      - closed
+    
+jobs:
+  frontend-job:
+    name: Frontend job 
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: Checkout repository
+       uses: actions/checkout@v2
+
+     - name: Trigger Frontend Workflow Pipeline
+       run: |
+        cd e-auction
+        echo "Frontend pipeline triggered, build in progress"
+       
+ 

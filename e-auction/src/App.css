@@ -1,0 +1,10 @@
+body {
+  background-color: #f0f4f8; 
+  background-image: url("components/assets/css-pattern.png"); 
+  background-size: cover;
+  background-attachment: fixed; 
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
